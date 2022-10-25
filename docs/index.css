@@ -9,7 +9,12 @@
     justify-content: space-between;
 } */
 
+body {
+    background-color: rgb(255, 232, 203);
+}
+
 h1 {
+    font-size: 3.5rem;
     text-align: center;
     width: 100%;
     font-family: 'Courier New', Courier, monospace
@@ -18,13 +23,27 @@ h1 {
 .poke-search {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 2.5% 0;
+}
+
+.pokeBall-pic {
+    height: 3rem;
+    margin-left: 1.5%;
 }
 
 .poke-search input {
     border: 1.5px black solid;
     margin-right: 1.5%;
     border-radius: 5px;
+    height: 1.5rem;
+}
+
+button {
+    border: 1.5px black solid;
+    border-radius: 5px;
+    height: 1.85rem;
+    margin: 0 1.5%;
 }
 
 .poke-card {
@@ -32,13 +51,15 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
-    background-color: antiquewhite;
+    width: 275px;
+    background-color: rgb(212, 185, 252);
+    border-radius: 10px;
+    border: 1px black solid;
 }
 
 .poke-pic {
-    width: 90%;
-    height: 20vh;
+    width: 95%;
+    height: 22.5vh;
 }
 
 .poke-name {
@@ -53,11 +74,19 @@ h1 {
 
 .focused {
     box-sizing: border-box;
-    border: 1px black solid;
+    border: 2px black solid;
 }
 
 .poke-bench {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }

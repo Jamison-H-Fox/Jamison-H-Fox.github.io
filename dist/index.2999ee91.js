@@ -570,7 +570,7 @@ function getPokeData(pokeName) {
         console.log(res.data);
         const pokeCard = pokeCardMaker({
             name: pokeName,
-            imgURL: res.data.sprites.other["official-artwork"].front_default,
+            imgURL: res.data.sprites.other["dream_world"].front_default,
             type: res.data.types[0].type.name
         });
         pokeBench.appendChild(pokeCard);
