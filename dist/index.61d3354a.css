@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+  width: 100%;
+  font-family: Courier New, Courier, monospace;
+}
+
+.poke-search {
+  justify-content: center;
+  padding: 2.5% 0;
+  display: flex;
+}
+
+.poke-search input {
+  border: 1.5px solid #000;
+  border-radius: 5px;
+  margin-right: 1.5%;
+}
+
+.poke-card {
+  width: 17.5%;
+  background-color: #faebd7;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5%;
+  display: flex;
+}
+
+.poke-pic {
+  width: 90%;
+  height: 20vh;
+}
+
+.poke-name, .poke-type {
+  color: #000;
+  font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+}
+
+.focused {
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+
+.poke-bench {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.61d3354a.css.map */
