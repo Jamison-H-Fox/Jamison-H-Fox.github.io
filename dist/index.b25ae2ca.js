@@ -3,7 +3,8 @@ const pokeSearch = document.querySelector("input");
 const pokeButton = document.querySelector("button");
 pokeButton.addEventListener("click", ()=>{
     while(pokeBench.firstChild)pokeBench.removeChild(pokeBench.firstChild);
-    getPokeData(pokeSearch.value);
+    let pokeName = pokeSearch.value.toLowerCase();
+    getPokeData(pokeName);
 });
 function pokeCardMaker({ name , imgURL , type  }) {
     const pokeCard = document.createElement("div");
@@ -39,7 +40,7 @@ function getPokeData(pokeName) {
         pokeBench.appendChild(pokeCard);
     }).catch((err)=>{
         console.error(err);
-    }).finally(()=>console.log("We caught 'im!"));
+    });
 }
 
 //# sourceMappingURL=index.b25ae2ca.js.map

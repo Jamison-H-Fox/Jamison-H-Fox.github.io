@@ -6,7 +6,8 @@ pokeButton.addEventListener('click', () => {
     while (pokeBench.firstChild) {
         pokeBench.removeChild(pokeBench.firstChild);
     }
-    getPokeData(pokeSearch.value);
+    let pokeName = pokeSearch.value.toLowerCase();
+    getPokeData(pokeName);
 })
 
 function pokeCardMaker( { name, imgURL, type} ) {
@@ -45,6 +46,7 @@ function getPokeData(pokeName) {
             const pokeCard = pokeCardMaker({name: pokeName, imgURL: res.data.sprites.other["dream_world"].front_default, type: res.data.types[0].type.name});
             pokeBench.appendChild(pokeCard);
         })
-        .catch(err => {console.error(err);})
-        .finally( () => console.log('We caught \'im!'))
+        .catch(err => {
+            console.error(err);
+        })
 }
