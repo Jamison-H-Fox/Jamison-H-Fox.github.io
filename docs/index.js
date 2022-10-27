@@ -1,5 +1,3 @@
-import axios from "axios";
-
 const pokeBench = document.querySelector('.poke-bench');
 const pokeSearch = document.querySelector('input');
 const pokeButton = document.querySelector('button');
@@ -50,5 +48,3 @@ function getPokeData(pokeName) {
         .catch(err => {console.error(err);})
         .finally( () => console.log('We caught \'im!'))
 }
-
-
