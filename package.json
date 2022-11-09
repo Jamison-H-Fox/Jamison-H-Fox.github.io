@@ -1,4 +1,6 @@
-{
+{ "scripts": {
+  "start": "parcel docs/index.html"
+},
   "devDependencies": {
     "buffer": "^6.0.3",
     "parcel": "^2.7.0",
